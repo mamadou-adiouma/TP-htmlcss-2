@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+     <meta charset="UTF-8">
+     <link rel="shorcut icon" href="./icons/fav-icon.png" sizes="144x144">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Dashboard | HTML - CSS</title>
+     <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+     <aside class="sidebar">
+          <div class="sidebar_container">
+               <h3>TaskFlow</h3>
+
+               <nav>
+                    <ul>
+                         <li>
+                              <a href="#" class="active flex-items">
+                                   <span>📊</span>
+                                   <span>Dashboard</span>
+                              </a>
+                         </li>
+                         <li>
+                              <a href="#" class="flex-items">
+                                   <span>📑</span>
+                                   <span>Task</span>
+                              </a>
+                         </li>
+                         <li>
+                              <a href="#" class="flex-items">
+                                   <span>🗓️</span>
+                                   <span>Calendar</span>
+                              </a>
+                         </li>
+                         <li>
+                              <a href="#" class="flex-items">
+                                   <span>👨‍👨‍👦‍👦</span>
+                                   <span>Team</span>
+                              </a>
+                         </li>
+                         <li>
+                              <a href="#" class="flex-items">
+                                   <span>⚙️</span>
+                                   <span>Settings</span>
+                              </a>
+                         </li>
+                    </ul>
+               </nav>
+          </div>
+     </aside>
+
+     <nav class="navbar">
+          <header class="navbar_container flex-items">
+               <form action="#">
+                    <input type="search" placeholder="Search tasks...">
+               </form>
+               <div class="profile flex-items">
+                    <div class="notif">
+                         <span>🔔</span>
+                         <span class="notif-count">3</span>
+                    </div>
+                    <img class="profil-img" width="35" src="./icons/user-profile.png"
+                         alt="mamadou adiouma profile image">
+                    <h3>Mamadou</h3>
+               </div>
+          </header>
+     </nav>
+
+     <main class="main">
+          <div class="main_container">
+               <div>
+                    <h1>Welcome back, <span>Mamadou</span></h1>
+                    <p class="info-task-count">You have <span id="task">5</span> tasks due today</p>
+               </div>
+               <section class="cards-stats">
+                    <article class="card flex-items">
+                         <span>📉</span>
+                         <div class="card_text">
+                              <p class="total-taks-text">Total Tasks</p>
+                              <h3 class="total-taks-num">24</h3>
+                         </div>
+                    </article>
+                    <article class="card flex-items">
+                         <span>✅</span>
+                         <div class="card_text">
+                              <p class="total-taks-text">Completed</p>
+                              <h3 class="total-taks-num">18</h3>
+                         </div>
+                    </article>
+                    <article class="card flex-items">
+                         <span>⏳</span>
+                         <div class="card_text">
+                              <p class="total-taks-text">In Progress</p>
+                              <h3 class="total-taks-num">4</h3>
+                         </div>
+                    </article>
+                    <article class="card flex-items">
+                         <span>🎯</span>
+                         <div class="card_text">
+                              <p class="total-taks-text">Pending</p>
+                              <h3 class="total-taks-num">2</h3>
+                         </div>
+                    </article>
+               </section>
+
+               <section class="details">
+                    <div class="details_container">
+                         <article class="card-detail flex-items">
+                              <h3>Today's Tasks</h3>
+                              <button id="add_task">+ Add Tasks</button>
+                         </article>
+                         <article class="card-detail flex-items">
+                              <div class="flex-items labels_container">
+                                   <div class="checkbox_box">
+                                        <input type="checkbox" id="high">
+                                        <span class="checked_styled"></span>
+                                   </div>
+                                   <label for="high" class="details-labels">
+                                        <h1>Design Team meeting</h1>
+                                        <p>Discuss new project timeline</p>
+                                   </label>
+                              </div>
+                              <div class="freq">
+                                   <p class="high">High</p>
+                                   <p>10:00 AM</p>
+                              </div>
+                         </article>
+                         <article class="card-detail flex-items">
+                              <div class="flex-items labels_container">
+                                   <div class="checkbox_box">
+                                        <input type="checkbox" id="medium">
+                                        <span class="checked_styled"></span>
+                                   </div>
+                                   <label for="medium" class="details-labels">
+                                        <h1>Client Presentation</h1>
+                                        <p>Present website mockups</p>
+                                   </label>
+                              </div>
+                              <div class="freq">
+                                   <p class="medium">Medium</p>
+                                   <p>02:30 PM</p>
+                              </div>
+                         </article>
+                         <article class="card-detail flex-items">
+                              <div class="flex-items labels_container">
+                                   <div class="checkbox_box">
+                                        <input type="checkbox" id="low">
+                                        <span class="checked_styled"></span>
+                                   </div>
+                                   <label for="low" class="details-labels">
+                                        <h1>Project Review</h1>
+                                        <p>Review sprint progress </p>
+                                   </label>
+                              </div>
+                              <div class="freq">
+                                   <p class="low">Low</p>
+                                   <p>04:00 PM</p>
+                              </div>
+                         </article>
+                    </div>
+               </section>
+
+          </div>
+     </main>
+</body>
+
+</html>
